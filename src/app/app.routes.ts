@@ -9,8 +9,8 @@ export const routes: Routes = [
   {
     path: 'gallery',
     loadComponent: () =>
-      import('../app/cat/gallery/gallery.component').then(
-        (mod) => mod.GalleryComponent
+      import('../app/cat/cat-viewer/cat-viewer.component').then(
+        (mod) => mod.CatViewerComponent
       ),
   },
   {

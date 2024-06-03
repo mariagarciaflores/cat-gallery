@@ -10,7 +10,7 @@ export class CatService {
 
   async getCats(): Promise<Cat[]> {
     const url =
-      'https://api.thecatapi.com/v1/images/search?limit=50&include_categories&api_key=live_lprLGU6ZpdipDiqBU2tgtyEr9Poi8OOddUdFTvhNNg8CKzh7JbH1zQ35e7Oxj4yH'; // Replace with your API key
+      'https://api.thecatapi.com/v1/images/search?limit=20&include_categories&api_key=live_lprLGU6ZpdipDiqBU2tgtyEr9Poi8OOddUdFTvhNNg8CKzh7JbH1zQ35e7Oxj4yH'; // Replace with your API key
 
     return fetch(url)
       .then((response) => response.json()) // Parse the JSON response

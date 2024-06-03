@@ -1,0 +1,14 @@
+<h1>Cats List</h1>
+
+<div>
+  <ul>
+    <ol *ngFor="let cat of data">
+      {{
+        cat.url
+      }}
+    </ol>
+    <ng-container *ngIf="data?.length === 0">
+      <li>¡No hay items en la lista!</li>
+    </ng-container>
+  </ul>
+</div>

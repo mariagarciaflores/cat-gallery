@@ -5,3 +5,7 @@
 .pink-border {
   border: 2px solid var(--primary-color);
 }
+
+img {
+  min-width: 500px;
+}

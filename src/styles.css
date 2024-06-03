@@ -40,6 +40,24 @@ footer {
   align-items: center;
 }
 
+h1 {
+  margin-left: 25px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--dark-gray);
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
 .cat-container {
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +80,6 @@ footer {
       object-fit: cover;
       object-position: top;
       border-radius: 5px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
     }
   }
 }

@@ -1,0 +1,9 @@
+<div class="btn-container">
+  <button (click)="updateView()">
+    {{ isGalleryView ? "Mostrar Lista" : "Mostrar Galería" }}
+  </button>
+</div>
+
+<app-gallery *ngIf="isGalleryView" [data]="cats"></app-gallery>
+
+<app-cat-list *ngIf="!isGalleryView" [data]="cats"></app-cat-list>
