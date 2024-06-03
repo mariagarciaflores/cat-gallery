@@ -1,1 +1,8 @@
-<p>gallery works!</p>
+<h1>Cats Gallery</h1>
+<ul class="cat-container">
+  <app-photo *ngFor="let cat of cats" [data]="cat"></app-photo>
+
+  <ng-container *ngIf="cats?.length === 0">
+    <li>¡No hay fotos de gatitos que mostrar!</li>
+  </ng-container>
+</ul>
