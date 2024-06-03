@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { GalleryComponent } from '../app/cat/gallery/gallery.component';
+import { ProfileComponent } from './cat/profile/profile.component';
 
 export const routes: Routes = [
   {
@@ -8,16 +10,10 @@ export const routes: Routes = [
   },
   {
     path: 'gallery',
-    loadComponent: () =>
-      import('../app/cat/gallery/gallery.component').then(
-        (mod) => mod.GalleryComponent
-      ),
+    component: GalleryComponent,
   },
   {
     path: 'gallery/:id',
-    loadComponent: () =>
-      import('../app/cat/profile/profile.component').then(
-        (mod) => mod.ProfileComponent
-      ),
+    component: ProfileComponent,
   },
 ];

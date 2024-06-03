@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NgIf } from '@angular/common';
+
 
 import { CatService } from '../../core/services/cat.service';
 import { Cat } from '../../core/models/cat.model';
@@ -8,7 +8,7 @@ import { Cat } from '../../core/models/cat.model';
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [NgIf],
+  imports: [],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css',
 })

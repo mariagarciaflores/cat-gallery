@@ -66,3 +66,13 @@ footer {
     }
   }
 }
+
+.placeholder {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.loading {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
