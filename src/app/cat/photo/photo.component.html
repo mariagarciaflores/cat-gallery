@@ -1,1 +1,4 @@
-<p>photo works!</p>
+<li>
+  <img [src]="data.url" [alt]="data.id" [routerLink]="data.id"
+  [class]="data.categories ? 'yellow-border' : 'pink-border'" />
+</li>

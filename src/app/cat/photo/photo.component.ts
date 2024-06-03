@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+import { Cat } from '../../core/models/cat.model';
 
 @Component({
   selector: 'app-photo',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './photo.component.html',
-  styleUrl: './photo.component.css'
+  styleUrl: './photo.component.css',
 })
 export class PhotoComponent {
-
+  @Input() data!: Cat;
 }

@@ -1,0 +1,7 @@
+.yellow-border {
+  border: 2px solid var(--secondary-color);
+}
+
+.pink-border {
+  border: 2px solid var(--primary-color);
+}

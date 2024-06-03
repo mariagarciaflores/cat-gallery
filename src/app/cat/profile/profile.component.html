@@ -1,0 +1,10 @@
+<div class="profile-container">
+  <img [src]="cat?.url" [alt]="cat?.id" />
+  <br />
+  <div *ngIf="cat?.categories; else elseBlock">
+    <p class="category">Categoría: {{ cat?.categories?.[0]?.name }}</p>
+  </div>
+  <ng-template #elseBlock>
+    <p class="category">No tiene categoría</p>
+  </ng-template>
+</div>

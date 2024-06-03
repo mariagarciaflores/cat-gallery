@@ -4,9 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-footer',
   standalone: true,
   imports: [],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  template: `
+    <footer>
+      <span>
+        API powered by <a href="https://thecatapi.com/">TheCatAPI</a>
+      </span>
+    </footer>
+  `,
+  styles: ``,
 })
-export class FooterComponent {
-
-}
+export class FooterComponent {}
